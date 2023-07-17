@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  display: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #eee;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.component {
+  display: flex;
+}
+.image-div {
+  background-image: url(./images/Rectangle\ 2.png);
+  background-repeat: no-repeat;
+  height: 202px;
+  width: 375px;
+  padding: 115px 28px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.card {
+  width: 375px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+.day {
+  color: #fff;
+  font-family: Russo One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+.hour {
+  color: #fff;
+  font-family: Russo One;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+.bottom {
+  padding: 23px 28px 78px 28px;
+}
+.input-div {
+  display: flex;
+  gap: 10px;
+}
+.input {
+  display: flex;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border: none;
+  border-radius: 5px;
+  background: #ebeff2;
+  outline: none;
+  font-family: Russo One;
+}
+.add-calendar {
+  display: flex;
+  gap: 1px;
+}
+.add {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #20eeb0;
+  padding: 10px 10px 10px 20px;
+}
+.arrow {
+  background: #20eeb0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
+.list {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  margin-top: 36px;
+}
+.component {
+  display: flex;
+  justify-content: space-between;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.plan {
+  color: #0d0d0d;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.todo-time {
+  color: #888;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.delete-circle {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+.delete {
+  width: 24px;
+  height: 24px;
+}
+.circle {
+  width: 24px;
+  height: 24px;
+}
+
+.react-datepicker__input-container {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #ebeff2;
+  outline: none;
+  font-family: Russo One;
+  margin-top: 10px;
+}
+
+.react-datepicker__input-container input {
+  border: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background: #ebeff2;
+  outline: none;
+  font-family: Russo One;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1020px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
   }
-  to {
-    transform: rotate(360deg);
+  .card {
+    width: 430px;
+    margin: unset;
+    margin-top: 90px;
+  }
+  .image-div {
+    width: 430px;
+    padding: 120px 28px 0px 0px;
+  }
+  h1 {
+    display: inline;
+    color: #007fdb;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 180px;
   }
 }
